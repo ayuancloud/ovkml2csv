@@ -1,0 +1,4 @@
+interface:
+  display_name: "OVKML to CSV"
+  short_description: "Convert Ovital .ovkml/.kml files to name + coordinate CSV"
+  default_prompt: "Use $ovkml2csv to convert my .ovkml file into a CSV with only the name, longitude and latitude columns."

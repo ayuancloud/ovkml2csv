@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# 转换产生的输出，除非显式添加到版本库
+*.output.csv
+converted/
+
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

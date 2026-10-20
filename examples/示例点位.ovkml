@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:gx="http://www.google.com/kml/ext/2.2"
+	>
+<Document>
+	<name>示例点位</name>
+	<Folder>
+		<name>示例点位</name>
+		<Folder>
+			<name>示范项目</name>
+			<Placemark>
+				<name>示例监测点A</name>
+				<OvAttr>
+					<OvIcon>4</OvIcon>
+					<OvIconNum>0</OvIconNum>
+				</OvAttr>
+				<Style>
+					<IconStyle>
+						<Icon>
+							<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+					</IconStyle>
+				</Style>
+				<OvCoordType>CGCS2000</OvCoordType>
+				<Point>
+					<coordinates>117.12345678,30.12345678,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>示例监测点B</name>
+				<OvAttr>
+					<OvIcon>4</OvIcon>
+					<OvIconNum>0</OvIconNum>
+				</OvAttr>
+				<Style>
+					<IconStyle>
+						<Icon>
+							<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+					</IconStyle>
+				</Style>
+				<OvCoordType>CGCS2000</OvCoordType>
+				<Point>
+					<coordinates>117.23456789,30.23456789,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>另一个分组</name>
+			<Placemark>
+				<name>示例断面,含逗号</name>
+				<OvAttr>
+					<OvIcon>2</OvIcon>
+					<OvIconNum>0</OvIconNum>
+				</OvAttr>
+				<OvCoordType>CGCS2000</OvCoordType>
+				<Point>
+					<coordinates>117.3456789,30.3456789,12.5</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

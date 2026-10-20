@@ -1,0 +1,27 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.8", "3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Check skill script is in sync
+        run: python3 tools/sync_skill_script.py --check
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Smoke test the CLI on the example file
+        run: |
+          python3 ovkml2csv.py "examples/示例点位.ovkml" -o /tmp/out.csv
+          cat /tmp/out.csv
